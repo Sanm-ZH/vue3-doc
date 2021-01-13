@@ -2,7 +2,7 @@
 
 ## 下载依赖
 
-```
+```bash
 npm i -D typescript
 npm i -D webpack webpack-cli
 npm i -D webpack-dev-server
@@ -96,14 +96,14 @@ module.exports = {
 
 ## 配置打包命令
 
-```
+```json
 "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.js",
 "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js"
 ```
 
 ## 运行与打包
 
-```
+```bash
 npm run dev
 npm run build
 ```
