@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用VuePress搭建在线文档网站 | Vue3+TS 学习文档</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <meta name="description" content="手摸手学前端">
+    
+    <link rel="preload" href="/vue3-doc/assets/css/0.styles.ef6e2ce0.css" as="style"><link rel="preload" href="/vue3-doc/assets/js/app.fc0d5f24.js" as="script"><link rel="preload" href="/vue3-doc/assets/js/2.aba5b471.js" as="script"><link rel="preload" href="/vue3-doc/assets/js/28.0244511b.js" as="script"><link rel="prefetch" href="/vue3-doc/assets/js/10.d0dca694.js"><link rel="prefetch" href="/vue3-doc/assets/js/11.69c077f1.js"><link rel="prefetch" href="/vue3-doc/assets/js/12.6314aa22.js"><link rel="prefetch" href="/vue3-doc/assets/js/13.8ae996c3.js"><link rel="prefetch" href="/vue3-doc/assets/js/14.8255b515.js"><link rel="prefetch" href="/vue3-doc/assets/js/15.c8914684.js"><link rel="prefetch" href="/vue3-doc/assets/js/16.415d062b.js"><link rel="prefetch" href="/vue3-doc/assets/js/17.ce2e2d4f.js"><link rel="prefetch" href="/vue3-doc/assets/js/18.94043ac9.js"><link rel="prefetch" href="/vue3-doc/assets/js/19.e63f0a19.js"><link rel="prefetch" href="/vue3-doc/assets/js/20.7fc31e81.js"><link rel="prefetch" href="/vue3-doc/assets/js/21.75e41ffa.js"><link rel="prefetch" href="/vue3-doc/assets/js/22.1f64f1cf.js"><link rel="prefetch" href="/vue3-doc/assets/js/23.23c3e1c9.js"><link rel="prefetch" href="/vue3-doc/assets/js/24.7d9f2784.js"><link rel="prefetch" href="/vue3-doc/assets/js/25.8698dc95.js"><link rel="prefetch" href="/vue3-doc/assets/js/26.fe2db1ba.js"><link rel="prefetch" href="/vue3-doc/assets/js/27.5c7282d2.js"><link rel="prefetch" href="/vue3-doc/assets/js/3.1837ba79.js"><link rel="prefetch" href="/vue3-doc/assets/js/4.865692a8.js"><link rel="prefetch" href="/vue3-doc/assets/js/5.81254301.js"><link rel="prefetch" href="/vue3-doc/assets/js/6.6e8c67be.js"><link rel="prefetch" href="/vue3-doc/assets/js/7.fec0ecd5.js"><link rel="prefetch" href="/vue3-doc/assets/js/8.31d43f80.js"><link rel="prefetch" href="/vue3-doc/assets/js/9.06161922.js">
+    <link rel="stylesheet" href="/vue3-doc/assets/css/0.styles.ef6e2ce0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue3-doc/" class="home-link router-link-active"><img src="/vue3-doc/images/logo.png" alt="Vue3+TS 学习文档" class="logo"> <span class="site-name can-hide">Vue3+TS 学习文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue3-doc/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/vue3-doc/vuepress_part/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  vuepress
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="more" class="dropdown-title"><span class="title">了解更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="more" class="mobile-dropdown-title"><span class="title">了解更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.vue3js.cn/docs/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vue3官方中文文档
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://cn.vuejs.org/v2/guide/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  官方正式文档
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://sanm-zh.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  个人博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://github.com/Sanm-ZH" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div> <a href="https://github.com/sanm-zh/vue3-doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue3-doc/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/vue3-doc/vuepress_part/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  vuepress
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="more" class="dropdown-title"><span class="title">了解更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="more" class="mobile-dropdown-title"><span class="title">了解更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          文档
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.vue3js.cn/docs/zh/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  vue3官方中文文档
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://cn.vuejs.org/v2/guide/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  官方正式文档
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://sanm-zh.github.io" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  个人博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-subitem"><a href="https://github.com/Sanm-ZH" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div> <a href="https://github.com/sanm-zh/vue3-doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/vue3-doc/vuepress_part/" aria-current="page" class="active sidebar-link">使用VuePress搭建在线文档网站</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue3-doc/vuepress_part/#_0-在线文档" class="sidebar-link">0. 在线文档</a></li><li class="sidebar-sub-header"><a href="/vue3-doc/vuepress_part/#_1-搭建基本环境" class="sidebar-link">1. 搭建基本环境</a></li><li class="sidebar-sub-header"><a href="/vue3-doc/vuepress_part/#_2-配置文档" class="sidebar-link">2. 配置文档</a></li><li class="sidebar-sub-header"><a href="/vue3-doc/vuepress_part/#_3-发布到gitpage" class="sidebar-link">3. 发布到gitpage</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="使用vuepress搭建在线文档网站"><a href="#使用vuepress搭建在线文档网站" class="header-anchor">#</a> 使用VuePress搭建在线文档网站</h1> <h2 id="_0-在线文档"><a href="#_0-在线文档" class="header-anchor">#</a> 0. 在线文档</h2> <p><a href="https://vuepress.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">VuePress官方在线文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="_1-搭建基本环境"><a href="#_1-搭建基本环境" class="header-anchor">#</a> 1. 搭建基本环境</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 将 VuePress 作为一个本地依赖安装</span>
+<span class="token function">npm</span> <span class="token function">install</span> -D vuepress
+
+<span class="token comment"># 新建一个 docs 文件夹</span>
+<span class="token function">mkdir</span> docs
+
+<span class="token comment"># 新建一个文件: docs/README.md</span>
+<span class="token builtin class-name">echo</span> <span class="token string">'# Hello VuePress!'</span> <span class="token operator">&gt;</span> docs/README.md
+
+<span class="token comment"># 启动文档项目</span>
+npx vuepress dev docs
+
+<span class="token comment"># 构建静态文件</span>
+npx vuepress build docs
+  <span class="token operator">|</span>-- docs
+    <span class="token operator">|</span>-- .vuepress
+      <span class="token operator">|</span>-- config.js
+    <span class="token operator">|</span>-- README.md
+</code></pre></div><h2 id="_2-配置文档"><a href="#_2-配置文档" class="header-anchor">#</a> 2. 配置文档</h2> <ol><li>整体结构</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token operator">|</span>-- dist
+<span class="token operator">|</span>-- dics
+  <span class="token operator">|</span>-- .vuepress
+    <span class="token operator">|</span>-- public
+      <span class="token operator">|</span>-- images
+    <span class="token operator">|</span>-- config.js
+  <span class="token operator">|</span>-- chapter1
+    <span class="token operator">|</span>-- 01_初识TS.md
+    <span class="token operator">|</span>-- 02_安装TS.md
+    <span class="token operator">|</span>-- 03_HelloWorld.md
+  <span class="token operator">|</span>-- chapter2
+    <span class="token operator">|</span>-- 1_type.md
+    <span class="token operator">|</span>-- 2_interface.md
+    <span class="token operator">|</span>-- 3_class.md
+    <span class="token operator">|</span>-- 4_function.md
+    <span class="token operator">|</span>-- 5_generic.md
+    <span class="token operator">|</span>-- 6_other.md
+  <span class="token operator">|</span>-- chapter3
+    <span class="token operator">|</span>-- 01_react.md
+    <span class="token operator">|</span>-- 02_vue.md
+  <span class="token operator">|</span>-- chapter4
+    <span class="token operator">|</span>-- README.md
+  <span class="token operator">|</span>-- README.md
+<span class="token operator">|</span>-- package.json
+</code></pre></div><ol><li>docs/.vuepress/config.js</li></ol> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 注意: base的值为github仓库的名称</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  base<span class="token operator">:</span> <span class="token string">'/vue3-doc/'</span><span class="token punctuation">,</span> <span class="token comment">/* 基础虚拟路径 */</span>
+  dest<span class="token operator">:</span> <span class="token string">'docs/dist'</span><span class="token punctuation">,</span> <span class="token comment">/* 打包文件基础路径, 在命令所在目录下 */</span>
+  title<span class="token operator">:</span> <span class="token string">'Vue3+TS 学习文档'</span><span class="token punctuation">,</span> <span class="token comment">// 标题</span>
+  description<span class="token operator">:</span> <span class="token string">'手摸手学前端'</span><span class="token punctuation">,</span> <span class="token comment">// 标题下的描述</span>
+  themeConfig<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// 主题配置</span>
+    sidebar<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">'/guide/'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'/guide/'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          title<span class="token operator">:</span> <span class="token string">'一.TypeScript快速上手'</span><span class="token punctuation">,</span>
+          collapsable<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+          children<span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              title<span class="token operator">:</span> <span class="token string">'初识 TypeScript'</span><span class="token punctuation">,</span> <span class="token comment">// 标题</span>
+              children<span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token comment">// 下级列表</span>
+                <span class="token string">'part1/01_初识TS'</span><span class="token punctuation">,</span>
+                <span class="token string">'part1/02_安装TS'</span><span class="token punctuation">,</span>
+                <span class="token string">'part1/03_HelloWorld'</span><span class="token punctuation">,</span>
+                <span class="token string">'part1/04_webpack打包'</span><span class="token punctuation">,</span>
+              <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              title<span class="token operator">:</span> <span class="token string">'TypeScript 常用语法'</span><span class="token punctuation">,</span>
+              children<span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">'part2/1_type'</span><span class="token punctuation">,</span>
+                <span class="token string">'part2/2_interface'</span><span class="token punctuation">,</span>
+                <span class="token string">'part2/3_class'</span><span class="token punctuation">,</span>
+                <span class="token string">'part2/4_function'</span><span class="token punctuation">,</span>
+                <span class="token string">'part2/5_generic'</span><span class="token punctuation">,</span>
+                <span class="token string">'part2/6_other'</span><span class="token punctuation">,</span>
+              <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="3"><li>docs/README.md</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>---
+<span class="token comment">#首页</span>
+home: <span class="token boolean">true</span>  
+<span class="token comment"># 图标</span>
+heroImage: /images/vue3_logo.png
+<span class="token comment"># 按钮文本</span>
+actionText: 开始学习 →
+<span class="token comment"># 按钮点击跳转路径</span>
+actionLink: /guide/
+---
+</code></pre></div><ol start="4"><li>package.json</li></ol> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token property">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;deploy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;gh-pages -d docs/dist&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_3-发布到gitpage"><a href="#_3-发布到gitpage" class="header-anchor">#</a> 3. 发布到gitpage</h2> <ol><li><p>使用git管理当前项目</p></li> <li><p>将打包的项目推送到gitpage</p></li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 下载工具包</span>
+<span class="token function">npm</span> i -D gh-pages
+<span class="token comment"># 执行打包命令</span>
+<span class="token function">npm</span> run build
+<span class="token comment"># 执行部署命令</span>
+<span class="token function">npm</span> run deploy
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/vue3-doc/assets/js/app.fc0d5f24.js" defer></script><script src="/vue3-doc/assets/js/2.aba5b471.js" defer></script><script src="/vue3-doc/assets/js/28.0244511b.js" defer></script>
+  </body>
+</html>
