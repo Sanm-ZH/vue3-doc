@@ -2,7 +2,7 @@
 
 ## 1) shallowReactive 与 reactive
 
-```js
+```javascript
 const reactiveHandler = {
   get (target, key) {
 
@@ -82,7 +82,7 @@ proxy.c.x[0] += 1
 
 ## 2) shallowRef 与 ref
 
-```js
+```javascript
 /*
 自定义shallowRef
 */
@@ -149,7 +149,7 @@ console.log(ref1, ref2)
 
 ## 3) shallowReadonly 与 readonly
 
-```js
+```javascript
 const readonlyHandler = {
   get (target, key) {
     if (key==='_is_readonly') return true
@@ -220,7 +220,7 @@ objReadOnly2.a.b = 2
 
 ## 4) isRef, isReactive 与 isReadonly
 
-```js
+```javascript
 /* 
 判断是否是ref对象
 */

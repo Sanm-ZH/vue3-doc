@@ -11,4 +11,4 @@
   git push origin master
   ```
 - 发布文档: ```npm run deploy```
-- 访问在线文档: https://sanm-zh.github.io/vue3_ts_doc/
+- 访问在线文档: https://sanm-zh.github.io/vue3-doc/

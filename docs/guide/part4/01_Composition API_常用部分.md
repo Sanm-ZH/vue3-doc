@@ -135,7 +135,7 @@ export default {
   - 对象: 通过defineProperty对对象的已有属性值的读取和修改进行劫持(监视/拦截)
   - 数组: 通过重写数组更新数组一系列更新元素的方法来实现元素修改的劫持
 
-```js
+```javascript
 Object.defineProperty(data, 'count', {
     get () {}, 
     set () {}
@@ -155,7 +155,7 @@ Object.defineProperty(data, 'count', {
     - https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy
     - https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Reflect
 
-```js
+```javascript
 new Proxy(data, {
 	// 拦截读取属性值
     get (target, prop) {
@@ -743,7 +743,7 @@ export default {
 
   hooks/useMousePosition.ts
 
-```js
+```javascript
 import { ref, onMounted, onUnmounted } from 'vue'
 /* 
 收集用户鼠标点击的页面坐标

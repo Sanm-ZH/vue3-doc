@@ -30,7 +30,7 @@ npx vuepress build docs
 
 1. 整体结构
   
-```
+```bash
 |-- dist
 |-- dics
   |-- .vuepress
@@ -59,36 +59,45 @@ npx vuepress build docs
 
 1. docs/.vuepress/config.js  
 
-```javacript
+```javascript
 // 注意: base的值为github仓库的名称
 module.exports = {
-  base: '/ts-study/', /* 基础虚拟路径: */
-  dest: 'dist', /* 打包文件基础路径, 在命令所在目录下 */
-  title: 'TypeScript 入门', // 标题
-  description: '学习使用 TypeScript', // 标题下的描述
+  base: '/vue3-doc/', /* 基础虚拟路径 */
+  dest: 'docs/dist', /* 打包文件基础路径, 在命令所在目录下 */
+  title: 'Vue3+TS 学习文档', // 标题
+  description: '手摸手学前端', // 标题下的描述
   themeConfig: { // 主题配置
-    sidebar: [ // 左侧导航
-      {
-        title: '初识 TypeScript', // 标题
-        collapsable: false, // 下级列表不可折叠
-        children: [ // 下级列表
-          'chapter1/01_初识TS',
-          'chapter1/02_安装TS',
-          'chapter1/03_HelloWorld'
-        ]
-      },
-      {
-        title: 'TypeScript 常用语法',
-        collapsable: false,
-        children: [
-          'chapter2/1_type',
-          'chapter2/2_interface',
-          'chapter2/3_class',
-          'chapter2/4_function',
-          'chapter2/5_generic',
-        ]
-      },
-    ]
+    sidebar: {
+      '/guide/': [
+        '/guide/',
+        {
+          title: '一.TypeScript快速上手',
+          collapsable: false,
+          children: [
+            {
+              title: '初识 TypeScript', // 标题
+              children: [ // 下级列表
+                'part1/01_初识TS',
+                'part1/02_安装TS',
+                'part1/03_HelloWorld',
+                'part1/04_webpack打包',
+              ]
+            },
+            {
+              title: 'TypeScript 常用语法',
+              children: [
+                'part2/1_type',
+                'part2/2_interface',
+                'part2/3_class',
+                'part2/4_function',
+                'part2/5_generic',
+                'part2/6_other',
+              ]
+            },
+          ]
+        }
+      ]
+    }
   }
 }
 ```
@@ -100,11 +109,11 @@ module.exports = {
 #首页
 home: true  
 # 图标
-heroImage: /images/xxxx.png
+heroImage: /images/vue3_logo.png
 # 按钮文本
 actionText: 开始学习 →
 # 按钮点击跳转路径
-actionLink: /chapter1/01_初识TS
+actionLink: /guide/
 ---
 ```
 

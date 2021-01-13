@@ -6,5 +6,5 @@ heroImage: /images/vue3_logo.png
 # 按钮文本
 actionText: 开始学习 →
 # 按钮点击跳转路径
-actionLink: 00_内容介绍.md
+actionLink: /guide/
 ---
